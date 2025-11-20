@@ -11,7 +11,6 @@
     margin: .5rem;
     padding: 1.5rem 1rem;
 
-    background-color: #49d8b8;
 
     border-radius: 1rem;
 
@@ -28,6 +27,7 @@
 
 .pokemon .name {
     color: #fff;
+    text-transform: capitalize;
     margin-bottom: .25rem;
 }
 
@@ -45,12 +45,15 @@
 }
 
 .types .type {
-    background-color: #61e1ca;
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
+
+    text-align: center;
+
+    filter: brightness(0.9);
 }
 
 .pokemon .detail img {
