@@ -52,8 +52,14 @@
     border-radius: 1rem;
 
     text-align: center;
+    user-select: none;
 
     filter: brightness(0.9);
+    /* pointer-events: none; */
+}
+
+.types .type:hover {
+    transform: scale(1.1);
 }
 
 .pokemon .detail img {
@@ -77,4 +83,30 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+#pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+#pagination button {
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    
+
+    padding: 0.5rem;
+
+    transition: scale .1s;
+}
+
+#pagination button:hover {
+    cursor: pointer;
+    scale: 1.05;
 }
